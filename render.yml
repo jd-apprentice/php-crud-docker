@@ -1,0 +1,11 @@
+services:
+  # A Docker web service
+  - type: web
+    name: php base
+    runtime: docker
+    repo: https://github.com/jd-apprentice/php-crud-docker.git
+    region: oregon # optional (defaults to oregon)
+    plan: standard # optional (defaults to starter instance type)
+    branch: develop # optional (defaults to master)
+    rootDir: app
+    numInstances: 1
